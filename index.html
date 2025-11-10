@@ -58,40 +58,72 @@
   <!-- Booking Section -->
   <section class="booking-section" id="booking">
     <div class="booking-left">
-      <h2>Choose Your Services</h2>
+      <header>
+         <h3>Our Services</h3>
+          <p>Click on Add to Cart  button to Add your Services </p>
+      </header>
+      <hr>
+     
 
       <div class="service" style="margin-bottom: 10px;">
-      Ironing - ₹70
+        <div class="servicename">
+           <i class="fa-solid fa-shirt"></i>
+            Ironing - ₹70
+        </div>
+      
       <button id="btn-ironing" class="add-btn" onclick="toggleItem('Ironing', 70, 'btn-ironing')">Add</button>
     </div>
 
     <div class="service" style="margin-bottom: 10px;">
-      Dry Cleaning - ₹120
+      <div class="servicename">
+           <i class="fa-solid fa-basket-shopping icon-wash"></i>
+           Dry Cleaning - ₹120
+        </div>
+      
       <button id="btn-dry" class="add-btn" onclick="toggleItem('Dry Cleaning', 120, 'btn-dry')">Add</button>
     </div>
 
     <div class="service" style="margin-bottom: 10px;">
-      Washing - ₹50
+      <div class="servicename">
+           <i class="fa-solid fa-shirt"></i>
+           Washing - ₹50
+        </div>
+      
       <button id="btn-washing" class="add-btn" onclick="toggleItem('Washing', 50, 'btn-washing')">Add</button>
     </div>
 
     <div class="service" style="margin-bottom: 10px;">
-      Folding - ₹30
+      <div class="servicename">
+           <i class="fa-solid fa-basket-shopping icon-wash"></i>
+           Folding - ₹30
+        </div>
+      
       <button id="btn-folding" class="add-btn" onclick="toggleItem('Folding', 30, 'btn-folding')">Add</button>
     </div>
 
     <div class="service" style="margin-bottom: 10px;">
-      Stain Removal - ₹100
+      <div class="servicename">
+           <i class="fa-solid fa-shirt"></i>
+           Stain Removal - ₹100
+        </div>
+      
       <button id="btn-stain" class="add-btn" onclick="toggleItem('Stain Removal', 100, 'btn-stain')">Add</button>
     </div>
-
-      <p class="booking-note">Add items to the cart before booking.</p>
+      <div class="note">
+        <i class="fa-solid fa-circle-info"></i>
+        <p class="booking-note">Add items to the cart before booking.</p>
+      </div>
+      
     </div>
 
     <div class="booking-right">
+     
       <div class="cart">
-        <h3>Your Cart</h3>
-       <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+         <header>
+          <h3>Your Cart</h3>
+      </header>
+      <div >
+          <table border="1" cellpadding="10" cellspacing="0" class="cartitemsall" style="width: 100%; border-collapse: collapse;">
       <thead>
         <tr>
           <th>Item</th>
@@ -101,19 +133,31 @@
       <tbody id="cart-body">
         <tr><td colspan="2" style="text-align:center;">No items added</td></tr>
       </tbody>
-    </table>
+      </table>
+      </div>  
+       
     <p style="margin-top: 10px;"><strong>Total:</strong> ₹<span id="total">0</span></p>
        
       </div>
 
       <div class="booking-form">
-        <h2>Book Now</h2><br>
+        <header>
+          <h3>Book Now</h3>
+        </header>
+        <br>
         <input type="text" id="fullName" placeholder="Full Name"><br>
-        <input type="email" id="email" placeholder="Email"><br>
-        <input type="tel" id="phone" placeholder="Phone Number"><br>
+
+        <!-- Wrap email and phone together -->
+        <div class="inputboxes">
+          <input type="email" id="email" placeholder="Email">
+          <input type="tel" id="phone" placeholder="Phone Number">
+        </div>
+
+        <br>
         <button onclick="sendBooking()">Book Now</button>
         <p id="thankyou-msg"></p>
       </div>
+
     </div>
   </section>
 <hr>

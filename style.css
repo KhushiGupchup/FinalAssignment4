@@ -152,7 +152,8 @@ body {
   padding: 20px;
   border: 2px solid #ccc; /* border added */
   border-radius: 8px;
-  height: 600px;
+  height: 750px;
+  background-color: #d9d9d971;
 
 }
 
@@ -165,19 +166,64 @@ body {
   border-radius: 8px;
   margin: 15px;
   padding: 10px;
+  background-color: #ffffff;
 }
+
+.booking-right{
+  height:600px;
+}
+
+header h2,p{
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+header  h3{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
 
 .service {
+  
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #eee;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
 }
 
+.servicename{
+  display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.servicename i{
+  color: rgb(15, 162, 230);
+}
 
+.note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #095dcc;
+ 
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-top: 80px;
+}
 
+.note i {
+  font-size: 16px;
+  color: #095dcc;
+}
+
+.booking-note {
+  margin: 0;
+  font-weight: 700;
+}
 
 .add-btn {
   background-color: #0077b6;
@@ -187,6 +233,10 @@ body {
    cursor: pointer;
   padding: 10px 20px;
   
+}
+
+.booking-form,.booking-right header{
+  font-size: 1rem;
 }
 
 /* FIXED HEIGHT CART WITH SCROLL */
@@ -205,20 +255,30 @@ body {
  
 }
 
+.booking-right  header h3{
+  font-size: 1.5rem;
+}
 .cart table th, .cart table td {
   border-bottom: 1px solid #ddd;
   padding: 8px;
   text-align: left;
-}
-.booking-right .cart{
-  height: 200px;
   overflow-y: auto;
 }
+.booking-right .cart{
+  height: 400px;
+  
+  background-color: #ffffff;
+}
+
+
+
 /* Booking form styling */
 .booking-form {
   margin-top: 20px;
    border: 1px solid #ccc;
   border-radius: 8px;
+  background-color: #ffffff;
+  height:350px;
   
   
   padding: 10px;
@@ -232,7 +292,7 @@ body {
 }
 
 .booking-form button ,.booking-right button {
-  margin-top: 25px;
+  margin-top: 15px;
   padding: 14px 30px;
   font-size: 1rem;
   background: #0077b6;
@@ -240,6 +300,19 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+
+/* Arrange email + phone on one line */
+.inputboxes {
+  display: flex;
+  gap: 10px;
+}
+
+.inputboxes input {
+  flex: 1;
+  width: auto; 
 }
 
 /* Features / Why Choose Us */
