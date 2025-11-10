@@ -100,6 +100,7 @@ body {
   max-width: 90%;
   height: auto;
 }
+
 /* Section container */
 .service-overview {
   display: flex;
@@ -115,7 +116,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* wraps on small screens */
+  flex-wrap: wrap;
+  /* wraps on small screens */
   gap: 20px;
   max-width: 1200px;
   width: 100%;
@@ -149,77 +151,80 @@ body {
 .booking-section {
   display: flex;
   gap: 30px;
-  padding: 20px;
-  border: 2px solid #ccc; /* border added */
+  padding: 30px;
+  border: 2px solid #ccc;
+  /* border added */
   border-radius: 8px;
   height: 650px;
-   background-color: #d9d9d971; 
-  
+  background-color: #d9d9d971;
+
 
 }
 
-.booking-left, .booking-right {
+.booking-left,
+.booking-right {
   flex: 1;
- 
+
 }
-.booking-left{
-   border: 1px solid #ccc;
+
+.booking-left {
+  border: 1px solid #ccc;
   border-radius: 8px;
-  margin: 15px;
-  padding: 10px;
+  padding: 15px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.booking-left .services{
-  flex:1;
+
+.booking-left .services {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
 }
 
-.booking-right{
-  height:100%;
+.booking-right {
+  height: 100%;
   display: flex;
   flex-direction: column;
- 
-}
-
-.servicelists{
- max-height: 150px; /* fixed height */
-  overflow-y: auto; /* scroll when content exceeds height */
-  height:150px;
-}
-
-header h2,p{
-  margin-bottom: 10px;
-  padding: 5px;
 
 }
-header  h3{
+
+.servicelists {
+  max-height: 150px;
+  /* fixed height */
+  overflow-y: auto;
+  /* scroll when content exceeds height */
+  height: 150px;
+}
+
+
+
+header h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 
 .service {
-  
+
   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 0;
-    border-bottom: 1px solid #eee;
-    padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  padding: 15px;
 }
 
-.servicename{
+.servicename {
   display: flex;
-    align-items: center;
-    gap: 12px;
+  align-items: center;
+  gap: 12px;
 }
-.servicename i{
+
+.servicename i {
   color: rgb(15, 162, 230);
 }
 
@@ -228,11 +233,11 @@ header  h3{
   align-items: center;
   gap: 8px;
   color: #095dcc;
- 
+
   border-radius: 8px;
   padding: 8px 12px;
   font-size: 14px;
-  
+
 }
 
 .note i {
@@ -250,43 +255,47 @@ header  h3{
   color: white;
   border: none;
   border-radius: 8px;
-   cursor: pointer;
+  cursor: pointer;
   padding: 10px 20px;
-  
+
 }
 
-.booking-form,.booking-right header{
+.booking-form,
+.booking-right header {
   font-size: 1rem;
 }
 
 /* FIXED HEIGHT CART WITH SCROLL */
 .cart {
   border: 1px solid #ccc;
-  padding: 10px;
- 
+  padding: 15px;
+
   border-radius: 8px;
-   margin-top: 10px ;
-   flex:1;
+ 
+  flex: 1;
 }
 
 .cart table {
   width: 100%;
   border-collapse: collapse;
- 
+
 }
 
-.booking-right  header h3{
+.booking-right header h3 {
   font-size: 1.5rem;
 }
-.cart table th, .cart table td {
+
+.cart table th,
+.cart table td {
   border-bottom: 1px solid #ddd;
   padding: 8px;
   text-align: left;
   overflow-y: auto;
 }
-.booking-right .cart{
+
+.booking-right .cart {
   height: 400px;
-  
+
   background-color: #ffffff;
 }
 
@@ -295,12 +304,12 @@ header  h3{
 /* Booking form styling */
 .booking-form {
   margin-top: 20px;
-   border: 1px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #ffffff;
- 
-  
-  
+  height: 300px;
+
+
   padding: 20px;
 }
 
@@ -311,8 +320,9 @@ header  h3{
   padding: 8px;
 }
 
-.booking-form button ,.booking-right button {
-  margin-top: 5px;
+.booking-form button,
+.booking-right button {
+ 
   padding: 14px 30px;
   font-size: 1rem;
   background: #0077b6;
@@ -324,6 +334,7 @@ header  h3{
 
 
 
+
 /* Arrange email + phone on one line */
 .inputboxes {
   display: flex;
@@ -332,7 +343,7 @@ header  h3{
 
 .inputboxes input {
   flex: 1;
-  width: auto; 
+  width: auto;
 }
 
 /* Features / Why Choose Us */
@@ -415,7 +426,7 @@ header  h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+
   color: #0e0d0d;
   padding: 60px 40px;
 }
@@ -426,7 +437,8 @@ header  h3{
   padding: 20px;
 }
 
-.footer-section h3, .footer-section h4 {
+.footer-section h3,
+.footer-section h4 {
   margin-bottom: 20px;
   color: #090909;
 }
@@ -453,11 +465,11 @@ header  h3{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;      
-  height: 48px;     
+  width: 48px;
+  height: 48px;
   margin: 0 8px;
-  color: black;            
-  font-size: 24px;         
+  color: black;
+  font-size: 24px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -467,6 +479,7 @@ header  h3{
 
 
 @media (max-width: 768px) {
+
   /* Stack major sections */
   .navbar,
   .hero,
@@ -476,8 +489,9 @@ header  h3{
     align-items: center;
     text-align: center;
   }
+
   .navbar {
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 15px 20px;
@@ -507,7 +521,7 @@ header  h3{
     text-align: center;
   }
 
-  
+
   /* Booking section adjusts */
   .booking-section {
     flex-direction: column;
@@ -558,7 +572,7 @@ header  h3{
   /* Booking section tighter on phones */
   .booking-section {
     padding: 10px;
-    height:1000px;
+    height: 1000px;
   }
 
   .booking-left,
@@ -595,10 +609,11 @@ header  h3{
     justify-content: center;
   }
 }
+
 /* Navbar Responsive */
 @media (max-width: 768px) {
   .navbar {
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 15px 20px;
@@ -627,4 +642,3 @@ header  h3{
     text-align: center;
   }
 }
-
