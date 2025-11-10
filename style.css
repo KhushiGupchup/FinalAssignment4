@@ -152,8 +152,9 @@ body {
   padding: 20px;
   border: 2px solid #ccc; /* border added */
   border-radius: 8px;
-  height: 750px;
-  background-color: #d9d9d971;
+  height: 650px;
+   background-color: #d9d9d971; 
+  
 
 }
 
@@ -167,10 +168,29 @@ body {
   margin: 15px;
   padding: 10px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.booking-left .services{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .booking-right{
-  height:600px;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.servicelists{
+ max-height: 150px; /* fixed height */
+  overflow-y: scroll; /* scroll when content exceeds height */
+  height:150px;
 }
 
 header h2,p{
@@ -180,7 +200,7 @@ header h2,p{
 }
 header  h3{
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -212,7 +232,7 @@ header  h3{
   border-radius: 8px;
   padding: 8px 12px;
   font-size: 14px;
-  margin-top: 80px;
+  
 }
 
 .note i {
@@ -243,10 +263,10 @@ header  h3{
 .cart {
   border: 1px solid #ccc;
   padding: 10px;
-  max-height: 300px; /* fixed height */
-  overflow-y: auto; /* scroll when content exceeds height */
+ 
   border-radius: 8px;
    margin-top: 10px ;
+   flex:1;
 }
 
 .cart table {
@@ -278,10 +298,10 @@ header  h3{
    border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #ffffff;
-  height:350px;
+ 
   
   
-  padding: 10px;
+  padding: 20px;
 }
 
 .booking-form input {
@@ -292,7 +312,7 @@ header  h3{
 }
 
 .booking-form button ,.booking-right button {
-  margin-top: 15px;
+  margin-top: 5px;
   padding: 14px 30px;
   font-size: 1rem;
   background: #0077b6;
