@@ -189,7 +189,7 @@ body {
 
 .servicelists{
  max-height: 150px; /* fixed height */
-  overflow-y: scroll; /* scroll when content exceeds height */
+  overflow-y: auto; /* scroll when content exceeds height */
   height:150px;
 }
 
@@ -627,3 +627,4 @@ header  h3{
     text-align: center;
   }
 }
+
