@@ -387,37 +387,59 @@ header h3 {
 
 
 
-/* Newsletter */
 .newsletter {
   background: #0077b6;
   color: #fff;
   padding: 50px 20px;
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.newsletter-form {
-  margin-top: 25px;
+.news {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+ 
+}
+
+.newshead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.formright {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+  flex: 1;
+  align-items: flex-start; 
 }
 
 .newsletter-form input {
   padding: 14px;
-  margin: 5px;
   border: none;
   border-radius: 6px;
   width: 220px;
-  max-width: 90%;
+  max-width: 100%;
+  font-size: 14px;
 }
 
-.newsletter-form button {
+.newsletter-formbutton {
   padding: 14px 30px;
   background: #023e8a;
   color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  width: 220px; 
+  margin-top: 10px;
+ 
 }
 
-.newsletter-form button:hover {
+.newsletter-formbutton:hover {
   background: #03045e;
 }
 
@@ -474,13 +496,77 @@ header h3 {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* ---------- Base Styles ---------- */
+/* Your current CSS applies here for desktops > 1400px */
 
-/* ---------- Responsive Design ---------- */
+/* ---------- Extra Small Phones (320px) ---------- */
+@media (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
 
+  .hero-left h1 {
+    font-size: 1.6rem;
+  }
 
+  .hero-left p {
+    font-size: 0.9rem;
+  }
+
+  .booking-section {
+    padding: 5px;
+    height: auto;
+  }
+
+  .booking-left,
+  .booking-right {
+    padding: 5px;
+  }
+
+  .cart {
+    max-height: 150px;
+  }
+
+  .booking-form input,
+  .booking-form button,
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+/* ---------- Small Phones (450px) ---------- */
+@media (max-width: 450px) {
+  html {
+    font-size: 13px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-left p {
+    font-size: 0.95rem;
+  }
+
+  .booking-section {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .cart {
+    max-height: 180px;
+  }
+}
+
+/* ---------- Tablets / Small Desktops (768px) ---------- */
 @media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
 
-  /* Stack major sections */
   .navbar,
   .hero,
   .booking-section,
@@ -490,23 +576,9 @@ header h3 {
     text-align: center;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px 20px;
-  }
-
-  .logo {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-
   .nav-links {
-    display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 15px;
   }
 
   .nav-links a {
@@ -516,38 +588,24 @@ header h3 {
 
   .username {
     margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
+  .hero-left h1 {
+    font-size: 2rem;
+  }
 
-  /* Booking section adjusts */
-  .booking-section {
+  .overview-row {
     flex-direction: column;
-    padding: 20px 10px;
+    align-items: center;
   }
 
   .booking-left,
   .booking-right {
     flex: 1 1 100%;
-    max-width: 100%;
   }
 
-  /* Add space between left & right */
   .booking-right {
     margin-top: 20px;
-  }
-
-  /* Hero text smaller */
-  .hero-left h1 {
-    font-size: 2rem;
-  }
-
-  /* Overview boxes stack */
-  .overview-row {
-    flex-direction: column;
-    align-items: center;
   }
 
   .footer-section {
@@ -555,90 +613,36 @@ header h3 {
   }
 }
 
-/* Phones (small screens) */
-@media (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-
+/* ---------- Large Desktops (1200px) ---------- */
+@media (max-width: 1200px) {
   .hero-left h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
-  .hero-left p {
-    font-size: 1rem;
+  .overview-row {
+    gap: 15px;
   }
 
-  /* Booking section tighter on phones */
   .booking-section {
-    padding: 10px;
-    height: 1000px;
+    padding: 25px;
   }
 
-  .booking-left,
-  .booking-right {
-    padding: 10px;
-    margin: 0;
-  }
-
-  /* Cart smaller */
   .cart {
-    max-height: 200px;
-    width: 100%;
-  }
-
-  /* Booking form full width */
-  .booking-form input,
-  .booking-form button {
-    width: 100%;
-  }
-
-  /* Newsletter & footer adjustments */
-  .newsletter-form input,
-  .newsletter-form button {
-    width: 100%;
-    margin-top: 8px;
-  }
-
-  .footer-section {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
+    height: 350px;
   }
 }
 
-/* Navbar Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px 20px;
+/* ---------- Extra Large Desktops (1400px) ---------- */
+@media (max-width: 1400px) {
+  .hero-left h1 {
+    font-size: 2.6rem;
   }
 
-  .logo {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+  .overview-row {
+    gap: 20px;
   }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-links a {
-    margin: 8px 0;
-    font-size: 1rem;
-  }
-
-  .username {
-    margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .booking-section {
+    padding: 30px;
   }
 }
